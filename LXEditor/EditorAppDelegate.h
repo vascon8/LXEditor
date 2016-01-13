@@ -7,9 +7,12 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "EditViewController.h"
 
 @interface EditorAppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
+@property  EditViewController *editController;
 
+@property (assign) IBOutlet NSView *contentView;
 @end

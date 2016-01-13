@@ -13,6 +13,11 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
+    self.editController = [[EditViewController alloc]initWithNibName:@"EditView" bundle:nil];
+    [self.editController.view setFrame:self.contentView.bounds];
+    
+    [self.contentView addSubview:self.editController.view];
+    
 }
 
 @end
